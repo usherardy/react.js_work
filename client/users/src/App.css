@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Sofia+Sans+Condensed:wght@1&display=swap');
+
+
+.App {
+  text-align: center;
+}
+
+
+.userDisplay {
+  font-family: 'Gilda Display', sans-serif; 
+  font-size: 15px;
+  margin-top:20px;
+  display:flex;
+  justify-content:center;
+}
+
+body {
+  background: linear-gradient(to right, #ff6a00, #ee0979); 
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  margin-left:15px;
+  margin-top: 25px;
+  font-size: 16px;
+  border: 2px solid #3498db; 
+  border-radius: 8px;
+  outline: none;  
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #f9f9f9; 
+  color: #333; 
+}
+
+input:focus {
+  border-color: #2980b9; 
+  box-shadow: 0 0 10px rgba(41, 128, 185, 0.5); 
+}
+
+
+input::placeholder {
+  color: #3498db; 
+}
+
+
+input:invalid {
+  background-color: #f0f0f0; 
+}
+
+input:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #e0e0e0; 
+}
+
+
