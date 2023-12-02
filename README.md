@@ -3,5 +3,4 @@ Using MERN stack
 
 use npm i and npm start
 
-run client/users/src/App.js —you can find the code linked with files in the components folder.
-run server/index.js 
+run npm start in server/ first then at client/users/ 
