@@ -1,9 +1,7 @@
 import {useState, useEffect} from "react";
 import Axios from "axios";
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import '../App.css';
-import Dropdown from 'react-bootstrap/Dropdown';
 
 function CreateProduct()
 {
@@ -91,32 +89,20 @@ function CreateProduct()
       <Button onClick={createProduct}>Create Product</Button>
 
       <div className="userDisplay">
-        {listOfProducts.map((product) => (
-            
-          <Card style={{ width: '18rem', margin:"15px" }}>
-          <Card.Body>
-            <Card.Title>Name:{product.name}</Card.Title>
-            <Card.Text>
-              Brand: {product.brand}<br/>
-              price: {product.price}<br/>
-              category: {product.category}<br/>
-            </Card.Text>
-           
-            <Dropdown>
-              <Dropdown.Toggle variant="success" id="dropdown-basic">
-                More Options
-              </Dropdown.Toggle>
-    
-              <Dropdown.Menu>
-                <Dropdown.Item > <Button variant="secondary"onClick={() => deleteProduct(product.name)}  >Delete user</Button></Dropdown.Item>
-                <Dropdown.Item><Button variant="secondary" onClick={() => updateProduct(product.name)}>Update user</Button></Dropdown.Item>
         
-              </Dropdown.Menu>
-            </Dropdown>
-            
-          </Card.Body>
-        </Card>
-        
+        {listOfProducts.map((product) => (  
+          <>
+          <div style={{ width: '18rem', margin:"15px" }}>
+           <h3>Name:{product.name}</h3>
+           <h3>Brand: {product.brand}</h3>
+           <h3>price: {product.price}</h3>
+           <h3>category: {product.category}</h3>
+          </div>
+        <div>        
+        <button onClick={() => deleteProduct(product.name)}>Delete Product </button>
+        <button onClick={() => updateProduct(product.name)}>Update Product</button>
+        </div>
+        </>
         ))}
       </div>
     </div>

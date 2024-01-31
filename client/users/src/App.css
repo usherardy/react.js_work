@@ -16,7 +16,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #ff6a00, #ee0979); 
+  background: linear-gradient(to right, #4b6cb7, #182848);
 }
 
 input {
@@ -55,3 +55,16 @@ input:hover {
 }
 
 
+
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}

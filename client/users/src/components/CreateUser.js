@@ -79,30 +79,19 @@ function CreateUser(){
 <div className="userDisplay">
 {listOfUsers.map((user) => {
 return (
-  
-<Card style={{ width: '18rem', margin:"15px" }}>
-      <Card.Body>
-        <Card.Title>Name:{user.name}</Card.Title>
-        <Card.Text>
-          Username: {user.username}<br/>
-          email: {user.email}<br/>
-          DOB: {user.dob}<br/>
-        </Card.Text>
-       
-        <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            More Options
-          </Dropdown.Toggle>
-
-          <Dropdown.Menu>
-            <Dropdown.Item onClick={() => deleteUser(user.name)}> <Button variant="secondary" >Delete user</Button></Dropdown.Item>
-            <Dropdown.Item><Button variant="secondary" onClick={() => updateUser(user.name)}>Update user</Button></Dropdown.Item>
-    
-          </Dropdown.Menu>
-        </Dropdown>
-        
-      </Card.Body>
-    </Card>
+          <>
+          <div style={{ width: '18rem', margin:"15px" }}>
+          <h3>Name:{user.name}</h3>  
+          <h3>Age:{user.age}</h3>
+          <h3>Username: {user.username}</h3>
+          <h3>email: {user.email}</h3>
+          <h3>DOB: {user.dob}</h3>
+          </div>
+             <div>        
+            <button onClick={() => deleteUser(user.name)}>Delete user </button>
+            <button onClick={() => updateUser(user.name)}>Update user</button>
+            </div>
+            </>
 );
 })}   
 </div>
