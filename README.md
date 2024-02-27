@@ -16,7 +16,7 @@ Utilized React Router for seamless navigation, enabling users to view individual
 ## Update and Delete Information (Collection 1 & 2):
 Implemented Express methods (PUT and DELETE) for updating and deleting information in both available collections, with dedicated buttons for actions.
 
-![img][https://github.com/usherardy/react.js_work/blob/main/S2.png]
+![img](S2.png)
 
 ## How to Run
 
